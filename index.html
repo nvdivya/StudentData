@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="wrapper">
+        <table align="center" cellspacing="2" cellpadding="5" id="data_table" border="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Student Id</th>
+                <th>Marks</th>
+                <th>Actions</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="name_row1">Divya</td>
+                <td id="ids_row1">120</td>
+                <td id="marks_row1">98</td>
+                <td>
+                    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')" />
+                    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')" />
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('1')" />
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="name_row2">Deepthi</td>
+                <td id="ids_row2">122</td>
+                <td id="marks_row2">85</td>
+                <td>
+                    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')" />
+                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')" />
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('2')" />
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="name_row3">Deepa</td>
+                <td id="ids_row3">124</td>
+                <td id="marks_row3">90</td>
+                <td>
+                    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')" />
+                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')" />
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('3')" />
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="new_name" placeholder="Enter  Name.."/></td>
+                <td><input type="number" id="new_ids" placeholder="Enter student id.."/></td>
+                <td><input type="number" id="new_marks" placeholder="Enter  Marks.."/></td>
+                <td>
+                    <input type="button" class="add" onclick="add_row();" value="Add Row" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
